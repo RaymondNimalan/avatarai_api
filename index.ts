@@ -10,6 +10,15 @@ const app: Express = express();
 app.use(express.json());
 app.use(cors());
 
+
+const { Configuration, OpenAIApi } = require('openai');
+
+const configuration = new Configuration({
+  organization: 'org-AHIUE2oiagZjyIJy3wE6HAsC',
+  apiKey: process.env.OPENAI_API_KEY,
+});
+const openai = new OpenAIApi(configuration);
+
 app.get('/', (req: Request, res: Response) => {
   res.send('Hello World From the Typescript Server!')
 });
