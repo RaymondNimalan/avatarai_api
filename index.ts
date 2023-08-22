@@ -73,7 +73,6 @@ try {
         "Accept": "application/json, text/plain, */*",
         "Content-Type": "application/json",
         "User-Agent": "OpenAI/NodeJS/3.3.0",
-        "Authorization": "Bearer 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",
         "OpenAI-Organization": "org-AHIUE2oiagZjyIJy3wE6HAsC",
         "Content-Length": 55
       },
